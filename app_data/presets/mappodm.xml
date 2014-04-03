@@ -1,0 +1,227 @@
+<presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0">
+	<group name="Roads" ru.name="Дороги">
+		+<item type="way" name="Автомагистраль">
+			<key key="road" value="highway" />
+			<text key="name" text="Название:" default="" delete_if_empty="true" />
+		</item>
+		+<item type="way" name="Крупная дорога">
+			<key key="road" value="major" />						
+		</item>
+		+<item type="way" name="Асфальтированная дорога">
+			<key key="road" value="asphalt" />						
+		</item>
+		+<item type="way" name="Улучшенная дорога">
+			<key key="road" value="advanced" />	
+			<combo key="passability" text="Проходимость:" values="2,3,4,5" default="" delete_if_empty="true" />					
+		</item>
+		<item type="way" name="Заброшенная улучшенная дорога">
+			<key key="road" value="advanced_unused" />	
+			<combo key="passability" text="Проходимость:" values="2,3,4,5" default="" delete_if_empty="true" />					
+		</item>
+		+<item type="way" name="Грунтовая дорога">
+			<key key="road" value="dirt" />	
+			<combo key="passability" text="Проходимость:" values="2,3,4,5" default="" delete_if_empty="true" />					
+		</item>
+		<item type="way" name="Заброшенная грунтовая дорога">
+			<key key="road" value="dirt_unused" />	
+			<combo key="passability" text="Проходимость:" values="2,3,4,5" default="" delete_if_empty="true" />					
+		</item>
+		+<item type="way" name="Заросшая дорога">
+			<key key="road" value="abandoned" />
+			<combo key="passability" text="Проходимость:" values="2,3,4,5" default="" delete_if_empty="true" />
+		</item>
+		+<item type="way" name="Широкая просека">
+			<key key="road" value="cutting_wide" />
+			<combo key="passability" text="Проходимость:" values="2,3,4,5" default="" delete_if_empty="true" />
+		</item>
+		+<item type="way" name="Просека">
+			<key key="road" value="cutting" />
+			<combo key="passability" text="Проходимость:" values="2,3,4,5" default="" delete_if_empty="true" />
+		</item>
+		+<item type="way" name="Тропа">
+			<key key="road" value="path" />
+			<combo key="passability" text="Проходимость:" values="2,3,4,5" default="" delete_if_empty="true" />
+		</item>
+		+<item type="way" name="Железная дорога">
+			<key key="road" value="railway" />						
+		</item>
+		<item type="way" name="Железная дорога малодеятельная">
+			<key key="road" value="railway_inactive" />						
+		</item>
+		+<item type="way" name="Автомобильный мост">
+			<key key="bridge" value="automobile" />	
+			<text key="name" text="Название:" default="" delete_if_empty="true" />					
+		</item>
+		+<item type="way" name="Пешеходный мост">
+			<key key="bridge" value="pedestrain" />		
+			<text key="name" text="Название:" default="" delete_if_empty="true" />				
+		</item>
+		+<item type="node,closedway" name="Остановка автобуса">
+			<key key="poi" value="bus_stop" />			
+			<text key="name" text="Название:" default="" delete_if_empty="true" />			
+		</item>
+		+<item type="node,closedway" name="Ж/д станция">
+			<key key="poi" value="railway_station" />		
+			<text key="name" text="Название:" default="" delete_if_empty="true" />				
+		</item>
+		<item type="node,way" name="Пешеходный тоннель">
+			<key key="poi" value="pedestrain_tunnel" />						
+		</item>
+	</group>
+	<group name="Water" ru.name="Вода">
+		+<item type="way" name="Широкая река">
+			<key key="river" value="wide" />	
+			<text key="name" text="Название:" default="" delete_if_empty="true" />					
+		</item>
+		<item type="way" name="Река">
+			<key key="river" value="river" />
+			<text key="name" text="Название:" default="" delete_if_empty="true" />						
+		</item>
+		+<item type="way" name="Ручей">
+			<key key="river" value="stream" />	
+			<text key="name" text="Название:" default="" delete_if_empty="true" />					
+		</item>
+		+<item type="way" name="Исчезающий или пересыхающий ручей">
+			<key key="river" value="drying" />
+			<text key="name" text="Название:" default="" delete_if_empty="true" />						
+		</item>
+		+<item type="way,closedway" name="Водоём">
+			<key key="landcover" value="water" />	
+			<text key="name" text="Название:" default="" delete_if_empty="true" />					
+		</item>
+		+<item type="closedway" name="Глубокое болото">
+			<key key="swamp" value="deep" />	
+			<text key="name" text="Название:" default="" delete_if_empty="true" />					
+		</item>
+		+<item type="closedway" name="Болото">
+			<key key="swamp" value="swamp" />						
+			<text key="name" text="Название:" default="" delete_if_empty="true" />
+		</item>
+		+<item type="node" name="Родник">
+			<key key="poi" value="spring" />						
+			<text key="name" text="Название:" default="" delete_if_empty="true" />
+		</item>
+	</group>
+
+	<group name="Natural" ru.name="Растительность">
+		+<item type="closedway" name="Лес">
+			<key key="landcover" value="forest" />						
+		</item>
+		+<item type="closedway" name="Редколесье">
+			<key key="landcover" value="sparse" />						
+		</item>
+		+<item type="closedway" name="Свежая вырубка">
+			<key key="landcover" value="felling" />						
+		</item>
+		+<item type="closedway" name="Старая вырубка">
+			<key key="landcover" value="felling_overgrown" />						
+		</item>
+		<item type="way" name="Граница лесной растительности">
+			<key key="border" value="forest" />						
+		</item>				
+	</group>	
+
+	<group name="Relief" ru.name="Рельеф">
+		+<item type="way" name="Сухая канава">
+			<key key="road" value="trench" />						
+		</item>
+		+<item type="way" name="Вал">
+			<key key="road" value="wall" />						
+		</item>
+		+<item type="way" name="Овраг">
+			<key key="relief" value="ravine" />						
+		</item>
+		+<item type="node" name="Курган">
+			<key key="poi" value="mound" />						
+		</item>
+		+<item type="way" name="Верхний край обрыва">
+			<key key="relief" value="cliff" />	
+			<text key="name" text="Название:" default="" delete_if_empty="true" />					
+		</item>
+		+<item type="way" name="Горизонталь">
+			<key key="relief" value="contour" />	
+			<text key="elevation" text="Высота:" default="" delete_if_empty="true" />					
+		</item>
+		+<item type="way" name="Бергштрихи">
+			<key key="relief" value="hatch" />						
+		</item>
+	</group>
+
+	<group name="Residential" ru.name="Населенные пункты">
+		+<item type="node" name="Город (Название)">
+			<key key="poi" value="town" />			
+			<text key="name" text="Название:" default="" delete_if_empty="true" />			
+		</item>
+		+<item type="node" name="Деревня (Название)">
+			<key key="poi" value="village" />	
+			<text key="name" text="Название:" default="" delete_if_empty="true" />					
+		</item>
+		+<item type="closedway" name="Городская застройка">
+			<key key="landcover" value="urban" />						
+		</item>
+		+<item type="closedway" name="Cельская застройка">
+			<key key="landcover" value="rural" />						
+		</item>
+		+<item type="closedway" name="Дачи">
+			<key key="landcover" value="cottage" />		
+			<text key="name" text="Название:" default="" delete_if_empty="true" />				
+		</item>
+		+<item type="closedway" name="Закрытые территории, промзоны">
+			<key key="landcover" value="restricted" />		
+			<text key="name" text="Название:" default="" delete_if_empty="true" />				
+		</item>
+		+<item type="node,closedway" name="Развалины">
+			<key key="poi" value="ruins" />	
+			<text key="name" text="Название:" default="" delete_if_empty="true" />					
+		</item>
+		+<item type="node,closedway" name="Памятник">
+			<key key="poi" value="memorial" />		
+			<text key="name" text="Название:" default="" delete_if_empty="true" />				
+		</item>
+		+<item type="node,closedway" name="Церковь">
+			<key key="poi" value="church" />						
+		</item>
+		+<item type="node,closedway" name="Магазин">
+			<key key="poi" value="store" />						
+		</item>
+		+<item type="node" name="Подпись территории">
+			<key key="poi" value="label" />			
+			<text key="name" text="Подпись:" default="" delete_if_empty="true" />			
+		</item>
+		+<item type="node,way,closedway" name="Отдельно стоящее здание">
+			<key key="poi" value="building" />			
+			<text key="name" text="Название:" default="" delete_if_empty="true" />			
+		</item>
+		+<item type="node,closedway" name="Кладбище (точечный объект)">
+			<key key="poi" value="cemetry" />						
+		</item>
+		+<item type="node,closedway" name="Кладбище (площадной объект)">
+			<key key="landcover" value="cemetry" />						
+		</item>
+		+<item type="node" name="Башня">
+			<key key="poi" value="tower" />						
+		</item>
+	</group>
+
+	<group name="ManMade" ru.name="Рукотворное">
+		+<item type="way" name="Газопровод">
+			<key key="road" value="gasline" />						
+		</item>
+		+<item type="way" name="ЛЭП">
+			<key key="road" value="powerline_major" />						
+		</item>
+		+<item type="way" name="Маленькая ЛЭП и линия связи">
+			<key key="road" value="powerline" />						
+		</item>
+		+<item type="way" name="Забор">
+			<key key="border" value="fence" />						
+		</item>
+		<item type="node" name="Триангуляционный знак">
+			<key key="poi" value="trig" />		
+			<text key="elevation" text="Отметка высоты:" default="" delete_if_empty="true" />				
+		</item>
+		+<item type="node" name="Охотничья вышка, кормушка для животных">
+			<key key="poi" value="hunting" />						
+		</item>
+	</group>
+</presets>

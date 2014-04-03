@@ -1,0 +1,1 @@
+java.exe -Xmx1024M -Djosm.home=.\app_data\  -jar .\josm-tested.jar

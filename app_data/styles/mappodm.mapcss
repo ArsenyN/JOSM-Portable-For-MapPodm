@@ -1,0 +1,419 @@
+canvas {
+	background-color: #FFFFFF;
+	/*default-points: false;
+	default-lines: false;*/
+}
+
+/* roads */ 
+
+way["road"="highway"]
+{
+	color: #FF8888;
+	width: 3.5;
+	casing-width: 1;
+	casing-color: #000000;
+}
+way["road"="major"] 
+{
+	color: #FF8888;
+	width: 3;
+	casing-width: 1;
+	casing-color: #000000;
+}
+
+way["road"="asphalt"]
+{
+	color: #FF8888;
+	width: 2;
+	casing-width: 1;
+	casing-color: #000000;
+}
+
+way["road"="advanced"]
+{
+	color: #ffffff;
+	width: 2;
+	casing-width: 1;
+	casing-color: #000000;
+	casing-dashes: 10,5;
+}
+
+
+way["road"="cutting"]
+{
+	color: #000000;
+	width: 1;
+	dashes: 4,4;	
+}
+
+way["road"="cutting_wide"]
+{
+	color: #000000;
+	width: 1.5;
+	dashes: 8,5;	
+}
+
+way["road"="dirt"]
+{
+	color: #000000;
+	width: 2;
+	dashes: 14,6;	
+}
+way["road"="abandoned"]
+{
+	color: #333333;
+	width: 2;
+	dashes: 14,6;	
+	dashes-background-color: #A2F0A2; 
+}
+
+way["road"="path"]
+{
+	color: #000000;
+	width: 2;
+	dashes: 6,6;	
+}
+way["road"="trench"]
+{
+	color: #BF6100;
+	width: 1.5;
+	dashes: 6,6;	
+}
+way["road"="wall"]
+{
+	color: #BF6100;
+	width: 3;
+		
+	casing-width: 1;
+	casing-color: #BF6100;
+	casing-dashes: 10,5;
+}
+way["road"="gasline"]
+{
+	color: #888888;
+	width: 4;
+	dashes: 30, 9;
+	repeat-image: "gasline.png";
+	repeat-image-spacing: 30;
+	repeat-image-phase: -9;
+}
+
+way["road"="powerline_major"]
+{
+	color: #888888;
+	width: 4;	
+	repeat-image: "powerline_major.png";
+	repeat-image-spacing: 35;	
+}
+
+way["road"="powerline"]
+{
+	color: #888888;
+	width: 2;	
+	repeat-image: "powerline.png";
+	repeat-image-spacing: 35;	
+}
+
+way["bridge"="automobile"]
+{
+	width: 3;
+	color: #ffffff;
+	casing-width: 2;
+	casing-color: #000000;
+}
+way["bridge"="pedestrain"]
+{
+	width: 1.5;
+	color: #ffffff;
+	casing-width: 1;
+	casing-color: #000000;
+}
+
+way["border"="fence"]
+{
+	width: 2;
+	color: #000000;
+	repeat-image: "fence.png";
+	repeat-image-spacing: 20;	
+	repeat-image-align: top;
+}
+
+way["road"="railway"]
+{
+	color: #000000;
+	width: 4;
+}
+/* //roads */ 
+
+/* passability */ 
+
+way["passability"="5"]
+{
+	dashes-background-color: #FEBA14;
+	casing-width: 1.5;
+	casing-color: #FEBA14;
+}
+way["passability"="4"]
+{
+	casing-width: 1;
+	casing-color: #FFD700;
+	dashes-background-color: #FFD700;
+}
+way["passability"="3"]
+{
+	dashes-background-color: #00b000;
+	casing-width: 1;
+	casing-color: #00b000;
+}
+way["passability"="2"]
+{
+	dashes-background-color: #00b000;
+	casing-width: 1;
+	casing-color: #00b000;
+}
+
+/* //passability */ 
+
+/* water */
+way["river"="drying"]
+{
+	color: #286BB9;	
+	width: 2;
+	dashes: 10,5;
+}
+way["river"="stream"]
+{	
+	color: #286BB9;	
+	width: 2;	
+}
+way["river"="wide"]
+{	
+	width: 3;
+	color: #00D4D4;
+	casing-width: 1;
+	casing-color: #286BB9;
+}
+way["landcover"="water"]
+{
+	fill-color: #00D4D4;
+	fill-opacity: 0.7;
+}
+way["swamp"="swamp"]
+{
+	fill-color: #286BB9;
+	fill-image: "swamp.png";
+	fill-opacity: 0.7;
+}
+way["swamp"="deep"]
+{
+	fill-color: #286BB9;
+	fill-image: "swamp_deep.png";
+	fill-opacity: 0.7;
+}
+/* //water */
+
+/* residentials */ 
+
+way["landcover"="rural"]
+{
+	fill-color: #FF7F7F;
+	width: 1;
+	color: #000000;	
+	fill-opacity: 0.7;
+}
+way["landcover"="urban"]
+{
+	fill-color: #BF5F5F;
+	width: 1;
+	color: #000000;	
+	fill-opacity: 0.7;
+}
+way["landcover"="cottage"]
+{
+	fill-color: #4A714F;
+	width: 1;
+	color: #000000;	
+	fill-opacity: 0.7;
+}
+way["landcover"="restricted"]
+{
+	fill-color: #BBBBBB;
+	width: 1;
+	color: #000000;	
+	fill-opacity: 0.7;
+}
+way["landcover"="cemetry"]
+{
+	width: 1;
+	color: #000000;	
+	fill-opacity: 0.7;
+	fill-image: "cemetry_fill.png";
+	fill-color: #547E54;
+}
+
+/* //residentials */ 
+
+
+/* nature */ 
+
+way["landcover"="sparse"]
+{
+	fill-color: #BBBBBB;
+	fill-image: "sparse.png";
+	fill-opacity: 0.7;
+}
+way["landcover"="felling"]
+{
+	fill-color: #FFFFFF;
+	fill-image: "felling.png";
+	fill-opacity: 0.7;	
+}
+way["landcover"="felling_overgrown"]
+{
+	fill-color: #A2F0A2;
+	fill-image: "felling_overgrown.png";
+	fill-opacity: 0.7;
+}
+way["landcover"="forest"]
+{
+	fill-color: #A2F0A2;
+	fill-opacity:1;
+	z-index:-2;
+	fill-opacity: 0.5;
+}
+way["border"="forest"]
+{
+	color: #039103;
+	width: 2;
+	dashes: 2,4;
+}
+
+/* //nature */ 
+
+/* captions */ 
+node["poi"="label"]
+{
+	text: auto;
+	color: #000000;
+	text-color: #000000;
+	font-size: 12;
+	font-style: italic;
+}
+node["poi"="village"]
+{
+	text:auto;
+	color: #000000;
+	text-color: #000000;
+	text-halo-color: #ffffff;
+	text-halo-radius: 1;
+	font-size: 12;
+	font-weight: bold;
+}
+node["poi"="town"]
+{
+	text:auto;
+	color: #000000;
+	text-color: #000000;
+	font-size: 14;
+	font-weight: bold;
+	text-halo-color: #ffffff;
+	text-halo-radius: 1;
+}
+
+/* //captions */ 
+
+
+/* poi */
+node["poi"="church"]
+{
+	icon-image: "church.png";	
+}
+node["poi"="memorial"]
+{
+	icon-image: "memorial.png";	
+}
+node["poi"="trig"]
+{
+	icon-image: "trig.png";	
+}
+node["poi"="bus_stop"]
+{
+	icon-image: "bus_stop.png";	
+}
+node["poi"="store"]
+{
+	icon-image: "store.png";	
+}
+node["poi"="railway_station"]
+{
+	icon-image: "railway_station.png";	
+}
+node["poi"="building"]
+{
+	icon-image: "building.png";	
+}
+node["poi"="ruins"]
+{
+	icon-image: "ruins.png";	
+}
+node["poi"="tower"]
+{
+	icon-image: "tower.png";	
+}
+node["poi"="hunting"]
+{
+	icon-image: "hunting.png";	
+}
+node["poi"="cemetry"]
+{
+	icon-image: "cemetry.png";	
+}
+node["poi"="spring"]
+{
+	icon-image: "spring.png";	
+}
+node["poi"="mound"]
+{
+	icon-image: "mound.png";	
+}
+
+/* //poi */
+
+
+/* relief */ 
+
+way["relief"="contour"]
+{
+	color: #BF6100;
+	width: 1.5;
+}
+way["relief"="hatch"]
+{
+	color: #BF6100;
+	width: 1;
+}
+way["relief"="contour"]["deprecated:contour-width"="major"]
+{
+	color: #BF6100;
+	width: 2.5;
+}
+
+way["relief"="cliff"]
+{
+	color: #BF6100;
+	width: 2.5;	
+	repeat-image: "cliff.png";
+	repeat-image-spacing: 20;	
+	repeat-image-align: top;
+	repeat-image-height: 8;
+}
+way["relief"="ravine"]
+{
+	color: #BF6100;
+	width: 3;		
+}
+
+/* //relief */
+
+
+
